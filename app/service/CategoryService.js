@@ -7,7 +7,7 @@ app.factory('categoryService', function ($http, $q, $log) {
             method: "POST",
             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
             data: jQuery.param(data)
-        }).success(function (response) {
+        }).then(function (response) {
             return response;
         });
     };
